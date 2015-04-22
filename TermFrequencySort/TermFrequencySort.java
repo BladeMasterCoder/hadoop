@@ -95,7 +95,7 @@ public class TermFrequencySort {
         
         Job job = Job.getInstance(conf, "InvertedIndexSort");
         
-        job.setJarByClass(InvertedIndex.class);
+        job.setJarByClass(TermFrequencySort.class);
                         
         job.setMapOutputKeyClass(DoubleWritable.class);
         job.setMapOutputValueClass(Text.class);
